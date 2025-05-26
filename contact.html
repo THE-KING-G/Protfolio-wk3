@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #f00;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.3) blur(2px);
+      pointer-events: none;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #f00, 0 0 20px #f00;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: #0ff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border: 1px solid #f00;
+      box-shadow: 0 0 15px #f00;
+      position: relative;
+      z-index: 1;
+    }
+
+    label, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    input, textarea {
+      background: #000;
+      border: 1px solid #f00;
+      color: #0f0;
+      padding: 10px;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 5px #f00;
+    }
+
+    button {
+      background: #f00;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #ff3333;
+    }
+  </style>
+</head>
+<body>
+
+
+  
+  
+  <header>
+    <h1>Contact Me</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your Name" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="you@example.com" />
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="5" placeholder="Type your message..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+</body>
+</html>

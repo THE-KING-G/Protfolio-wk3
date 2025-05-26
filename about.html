@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #f00;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.3) blur(2px);
+      pointer-events: none;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #f00, 0 0 20px #f00;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: #0ff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .content {
+      animation: slideIn 2s ease-out;
+      padding: 20px;
+      border-left: 5px solid #f00;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      position: relative;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  
+ 
+  <header>
+    <h1>About Me</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <div class="content">
+    <p>Hello! I’m <strong>Sudip Poudel</strong>, and I am currently studying Bachelor in Information Technology (B.IT) at MIT. I enjoy learning about how computers and technology work, and I’m always curious to explore new things in the IT world.</p>
+    <br><p>I am especially interested in cybersecurity. I want to learn how to protect computer systems from hackers and keep data safe. I find it exciting to understand how cyber attacks happen and how we can stop them.</p></br>
+    <p>Besides technology, I love exploring nature on my bike. Riding through beautiful places helps me relax and enjoy life outside of screens. It gives me peace and new energy.</p>
+    <br><p>"Keep learning, keep moving — your journey has just begun."</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luminoth</title>
+
+
+  <link rel="icon" type="image/png" href="favicon-32x32.png" />
+
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #f00;
+      padding: 20px;
+    }
+
+    
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.3) blur(2px);
+      pointer-events: none;
+    }
+
+   
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      color: #f00;
+    }
+
+    .glow {
+      font-size: 2.5rem;
+      color: #f00;
+      text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #ff0000;
+      margin-bottom: 10px;
+    }
+
+    .typing {
+      color: #0f0;
+      font-size: 1.2rem;
+      border-right: 2px solid #0f0;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards;
+      margin-bottom: 30px;
+    }
+
+    @keyframes typing {
+      to { width: 100%; }
+    }
+
+    .highlight {
+      color: #0ff;
+    }
+
+    section {
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    h2 {
+      border-bottom: 2px solid #f00;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .project-box {
+      background-color: #111;
+      border: 1px solid #f00;
+      padding: 15px;
+      box-shadow: 0 0 10px #f00;
+    }
+
+    footer {
+      text-align: center;
+      border-top: 1px solid #f00;
+      padding-top: 20px;
+      margin-top: 30px;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #0ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .glow {
+        font-size: 2rem;
+      }
+      .typing {
+        font-size: 1rem;
+      }
+      section {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <div class="container">
+    <header>
+      <h1 class="glow"><span class="highlight">Welcome To The Paradox !!</span></h1>
+      <p class="typing">&gt; Code | Hack | Conquer</p>
+    </header>
+
+    <section>
+      <h2>Want to know me?</h2>
+      <div class="project-box">
+        <p>
+          I am Su...
+          <a href="about.html">click here</a>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>If you have mastered these 4 skills</h2>
+      <ul>
+        <li>Code</li>
+        <li>Exploit</li>
+        <li>Infiltrate</li>
+        <li>Outthink</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Project "The-Luminoth_7" is waiting for you.</h2>
+      <p><strong>Click here</strong> <a href="contact.html">Send me a message</a></p>
+      <p>Something big is being planned... but only a few will understand.<br>The system is waking up.</p>
+    </section>
+
+    <footer>
+      <p>📧 sudeeppoudel416@example.com | <a href="https://github.com/THE-KING-G" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>
